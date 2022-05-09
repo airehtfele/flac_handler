@@ -4,6 +4,9 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 import 'package:unflacgui/parser/cue_parser.dart';
+import 'package:unflacgui/parser/cue_info.dart';
+import 'package:unflacgui/parser/file_info.dart';
+import 'package:unflacgui/parser/track_info.dart';
 
 import 'cue_parser_test.mocks.dart';
 
