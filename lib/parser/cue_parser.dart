@@ -13,13 +13,13 @@ import 'package:unflacgui/parser/track_performer_command_parser.dart';
 import 'package:unflacgui/parser/track_title_command_parser.dart';
 
 class CueParser {
-  final CueInfo _cueInfo = CueInfo();
   final trackIsOpen = false;
   bool cueInfoTitleSettled = false;
   FileInfo? currentParsingFile;
   TrackInfo? currentTrackInfo;
 
   CueInfo? parse(File cueFile) {
+    final CueInfo cueInfo = CueInfo(cuePath: cueFile.path);
     final lines = cueFile.readAsLinesSync();
     for (String line in lines) {
       CommandParser? commandParser;
@@ -27,10 +27,10 @@ class CueParser {
       String? command = commandRegex.stringMatch(line);
 
       if (command == 'REM') {
-        commandParser = RemCommandParser(_cueInfo);
+        commandParser = RemCommandParser(cueInfo);
       } else if (command == 'PERFORMER') {
         if (currentTrackInfo == null) {
-          commandParser = PerformerCommandParser(_cueInfo);
+          commandParser = PerformerCommandParser(cueInfo);
         } else {
           commandParser = TrackPerformerCommandParser(currentTrackInfo);
         }
@@ -38,11 +38,11 @@ class CueParser {
         if (currentTrackInfo != null) {
           commandParser = TrackTitleCommandParser(currentTrackInfo);
         } else {
-          commandParser = TitleCommandParser(_cueInfo);
+          commandParser = TitleCommandParser(cueInfo);
         }
       } else if (command == 'FILE') {
         currentParsingFile = FileInfo();
-        _cueInfo.files.add(currentParsingFile!);
+        cueInfo.files.add(currentParsingFile!);
         commandParser = FileCommandParser(currentParsingFile!);
       } else if (command == 'TRACK') {
         currentTrackInfo = TrackInfo();
@@ -53,6 +53,6 @@ class CueParser {
       }
       commandParser?.parse(line);
     }
-    return _cueInfo;
+    return cueInfo;
   }
 }

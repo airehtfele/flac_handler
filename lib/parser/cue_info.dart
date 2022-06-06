@@ -7,6 +7,9 @@ class CueInfo {
   String? comment;
   String? performer;
   String? title;
-
   final List<FileInfo> files = [];
+  String cuePath;
+  CueInfo({
+    required this.cuePath,
+  });
 }
