@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:unflacgui/pages/home/area_widget.dart';
 import 'package:unflacgui/pages/home/cue_data_info_widget.dart';
+import 'package:unflacgui/pages/home/cue_files_info_widget.dart';
 import 'package:unflacgui/pages/home/select_file_widget.dart';
 import 'package:unflacgui/parser/cue_info.dart';
 import 'package:unflacgui/viewmodel/cueinfo_viewmodel.dart';
@@ -20,7 +22,38 @@ class HomePage extends ConsumerWidget {
             padding: EdgeInsets.all(8.0),
             child: SelectFileWidget(),
           ),
-          if (cueInfo != null) CueDataInfoWidget(cueInfo: cueInfo)
+          if (cueInfo != null)
+            Expanded(
+              child: LayoutBuilder(
+                builder: (BuildContext context, BoxConstraints constraints) {
+                  return Row(
+                    children: [
+                      SizedBox(
+                        width: constraints.maxWidth * .25,
+                        height: constraints.maxHeight,
+                        child: AreaWidget(
+                          title: 'Information',
+                          child: CueDataInfoWidget(cueInfo: cueInfo),
+                        ),
+                      ),
+                      SizedBox(
+                        width: constraints.maxWidth * .75,
+                        height: constraints.maxHeight,
+                        child: AreaWidget(
+                          title: 'Tracks',
+                          margin: const EdgeInsets.only(
+                            top: 8,
+                            right: 8,
+                            bottom: 8,
+                          ),
+                          child: CueFilesInfoWidget(files: cueInfo.files),
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              ),
+            )
         ],
       ),
     );

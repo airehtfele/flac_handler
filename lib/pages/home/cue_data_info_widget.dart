@@ -36,37 +36,29 @@ class CueDataInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dataItems = _infoItems;
-    return Expanded(
-      child: ListView.builder(
-        itemBuilder: (BuildContext context, int index) {
-          final backgroundColor = index % 2 == 0
-              ? Colors.blue.withOpacity(1)
-              : Colors.blue.withOpacity(.77);
-          final currentItem = dataItems[index];
-          return Container(
-            padding: const EdgeInsets.all(4),
-            color: backgroundColor,
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    currentItem.title,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    currentItem.value,
-                    style: const TextStyle(
-                      color: Colors.white,
-                    ),
-                  )
-                ]),
-          );
-        },
-        itemCount: dataItems.length,
-      ),
+    return ListView.builder(
+      itemBuilder: (BuildContext context, int index) {
+        final currentItem = dataItems[index];
+        return Container(
+          child:
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+            Text(
+              currentItem.title,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              currentItem.value,
+              style: const TextStyle(
+                color: Colors.white,
+              ),
+            )
+          ]),
+        );
+      },
+      itemCount: dataItems.length,
     );
   }
 }
