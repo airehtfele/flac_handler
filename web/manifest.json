@@ -1,6 +1,6 @@
 {
-    "name": "unflacgui",
-    "short_name": "unflacgui",
+    "name": "rift",
+    "short_name": "rift",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

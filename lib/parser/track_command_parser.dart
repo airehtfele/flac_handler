@@ -1,6 +1,6 @@
-import 'package:unflacgui/parser/command_parser.dart';
-import 'package:unflacgui/parser/cue_parser.dart';
-import 'package:unflacgui/parser/track_info.dart';
+import 'package:rift/parser/command_parser.dart';
+import 'package:rift/parser/cue_parser.dart';
+import 'package:rift/parser/track_info.dart';
 
 class TrackCommandParser extends CommandParser {
   final TrackInfo? _trackInfo;

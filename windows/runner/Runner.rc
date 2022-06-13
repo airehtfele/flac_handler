@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.eleftha" "\0"
-            VALUE "FileDescription", "unflacgui" "\0"
+            VALUE "CompanyName", "com.example" "\0"
+            VALUE "FileDescription", "rift" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "unflacgui" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.eleftha. All rights reserved." "\0"
-            VALUE "OriginalFilename", "unflacgui.exe" "\0"
-            VALUE "ProductName", "unflacgui" "\0"
+            VALUE "InternalName", "rift" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "rift.exe" "\0"
+            VALUE "ProductName", "rift" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

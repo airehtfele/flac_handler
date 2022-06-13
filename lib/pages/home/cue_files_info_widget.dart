@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unflacgui/pages/home/cue_track_info_widget.dart';
-import 'package:unflacgui/parser/file_info.dart';
+import 'package:rift/pages/home/cue_track_info_widget.dart';
+import 'package:rift/parser/file_info.dart';
 
 class CueFilesInfoWidget extends StatelessWidget {
   final List<FileInfo> files;

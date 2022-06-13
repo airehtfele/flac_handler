@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:unflacgui/viewmodel/cueinfo_viewmodel.dart';
+import 'package:rift/viewmodel/cueinfo_viewmodel.dart';
 
 class SelectFileWidget extends ConsumerWidget {
   const SelectFileWidget({super.key});

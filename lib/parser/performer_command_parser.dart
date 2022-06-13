@@ -1,5 +1,5 @@
-import 'package:unflacgui/parser/command_parser.dart';
-import 'package:unflacgui/parser/cue_info.dart';
+import 'package:rift/parser/command_parser.dart';
+import 'package:rift/parser/cue_info.dart';
 
 class PerformerCommandParser extends CommandParser {
   final CueInfo _cueInfo;

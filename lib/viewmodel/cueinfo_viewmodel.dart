@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:unflacgui/parser/cue_info.dart';
-import 'package:unflacgui/parser/cue_parser.dart';
+import 'package:rift/parser/cue_info.dart';
+import 'package:rift/parser/cue_parser.dart';
 
 final cueInfoViewModelProvider =
     StateNotifierProvider<CueInfoViewModel, CueInfo?>(

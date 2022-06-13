@@ -1,4 +1,4 @@
-import 'package:unflacgui/parser/file_info.dart';
+import 'package:rift/parser/file_info.dart';
 
 class CueInfo {
   String? genre;

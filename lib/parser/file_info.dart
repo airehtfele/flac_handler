@@ -1,4 +1,4 @@
-import 'package:unflacgui/parser/track_info.dart';
+import 'package:rift/parser/track_info.dart';
 
 class FileInfo {
   String? name;

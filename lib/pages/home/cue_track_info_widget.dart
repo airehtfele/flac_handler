@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unflacgui/parser/track_info.dart';
+import 'package:rift/parser/track_info.dart';
 
 class CueTrackInfoWidget extends StatelessWidget {
   final TrackInfo trackInfo;

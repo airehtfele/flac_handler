@@ -1,5 +1,5 @@
-import 'package:unflacgui/parser/command_parser.dart';
-import 'package:unflacgui/parser/file_info.dart';
+import 'package:rift/parser/command_parser.dart';
+import 'package:rift/parser/file_info.dart';
 
 class FileCommandParser extends CommandParser {
   final FileInfo _fileInfo;

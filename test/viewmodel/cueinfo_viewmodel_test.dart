@@ -4,9 +4,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
-import 'package:unflacgui/parser/cue_info.dart';
-import 'package:unflacgui/parser/cue_parser.dart';
-import 'package:unflacgui/viewmodel/cueinfo_viewmodel.dart';
+import 'package:rift/parser/cue_info.dart';
+import 'package:rift/parser/cue_parser.dart';
+import 'package:rift/viewmodel/cueinfo_viewmodel.dart';
 
 import 'cueinfo_viewmodel_test.mocks.dart';
 

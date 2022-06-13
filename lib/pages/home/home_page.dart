@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:unflacgui/pages/home/area_widget.dart';
-import 'package:unflacgui/pages/home/cue_data_info_widget.dart';
-import 'package:unflacgui/pages/home/cue_files_info_widget.dart';
-import 'package:unflacgui/pages/home/select_file_widget.dart';
-import 'package:unflacgui/parser/cue_info.dart';
-import 'package:unflacgui/viewmodel/cueinfo_viewmodel.dart';
+import 'package:rift/pages/home/area_widget.dart';
+import 'package:rift/pages/home/cue_data_info_widget.dart';
+import 'package:rift/pages/home/cue_files_info_widget.dart';
+import 'package:rift/pages/home/select_file_widget.dart';
+import 'package:rift/parser/cue_info.dart';
+import 'package:rift/viewmodel/cueinfo_viewmodel.dart';
 
 class HomePage extends ConsumerWidget {
   const HomePage({Key? key}) : super(key: key);

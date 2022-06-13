@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unflacgui/parser/cue_info.dart';
+import 'package:rift/parser/cue_info.dart';
 
 class DataValue {
   final String title;

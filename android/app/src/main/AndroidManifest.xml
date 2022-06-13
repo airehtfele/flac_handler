@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.eleftha.unflacgui">
+    package="com.example.rift">
    <application
-        android:label="unflacgui"
+        android:label="rift"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,16 +1,16 @@
 import 'dart:io';
-import 'package:unflacgui/parser/command_parser.dart';
-import 'package:unflacgui/parser/cue_info.dart';
-import 'package:unflacgui/parser/file_command_parser.dart';
-import 'package:unflacgui/parser/file_info.dart';
-import 'package:unflacgui/parser/performer_command_parser.dart';
-import 'package:unflacgui/parser/rem_parser.dart';
-import 'package:unflacgui/parser/title_command_parser.dart';
-import 'package:unflacgui/parser/track_command_parser.dart';
-import 'package:unflacgui/parser/track_index_command_parser.dart';
-import 'package:unflacgui/parser/track_info.dart';
-import 'package:unflacgui/parser/track_performer_command_parser.dart';
-import 'package:unflacgui/parser/track_title_command_parser.dart';
+import 'package:rift/parser/command_parser.dart';
+import 'package:rift/parser/cue_info.dart';
+import 'package:rift/parser/file_command_parser.dart';
+import 'package:rift/parser/file_info.dart';
+import 'package:rift/parser/performer_command_parser.dart';
+import 'package:rift/parser/rem_parser.dart';
+import 'package:rift/parser/title_command_parser.dart';
+import 'package:rift/parser/track_command_parser.dart';
+import 'package:rift/parser/track_index_command_parser.dart';
+import 'package:rift/parser/track_info.dart';
+import 'package:rift/parser/track_performer_command_parser.dart';
+import 'package:rift/parser/track_title_command_parser.dart';
 
 class CueParser {
   final trackIsOpen = false;
